@@ -1,0 +1,514 @@
+{
+    "contracts": {
+        "/home/eric/Documents/blockchain_projects/CryptoBets/contracts/Bets.sol": {
+            "Bets": {
+                "abi": [
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "betIDs",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "6080604052348015600f57600080fd5b5060af8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063bc8b351214602d575b600080fd5b604760048036036020811015604157600080fd5b50356059565b60408051918252519081900360200190f35b60008181548110606857600080fd5b60009182526020909120015490508156fea264697066735822122065f10e3d719675b74fb031073a8f8589bbd97914994e5c562c95537552693be164736f6c63430007040033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xAF DUP1 PUSH2 0x1E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xBC8B3512 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x47 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x41 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0x59 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x0 DUP2 DUP2 SLOAD DUP2 LT PUSH1 0x68 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 SWAP2 DUP3 MSTORE PUSH1 0x20 SWAP1 SWAP2 KECCAK256 ADD SLOAD SWAP1 POP DUP2 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH6 0xF10E3D719675 0xB7 0x4F 0xB0 BALANCE SMOD GASPRICE DUP16 DUP6 DUP10 0xBB 0xD9 PUSH26 0x14994E5C562C95537552693BE164736F6C634300070400330000 ",
+                        "sourceMap": "66:433:0:-:0;;;;;;;;;;;;;;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "generatedSources": [],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "6080604052348015600f57600080fd5b506004361060285760003560e01c8063bc8b351214602d575b600080fd5b604760048036036020811015604157600080fd5b50356059565b60408051918252519081900360200190f35b60008181548110606857600080fd5b60009182526020909120015490508156fea264697066735822122065f10e3d719675b74fb031073a8f8589bbd97914994e5c562c95537552693be164736f6c63430007040033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xBC8B3512 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x47 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x41 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0x59 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x0 DUP2 DUP2 SLOAD DUP2 LT PUSH1 0x68 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 SWAP2 DUP3 MSTORE PUSH1 0x20 SWAP1 SWAP2 KECCAK256 ADD SLOAD SWAP1 POP DUP2 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH6 0xF10E3D719675 0xB7 0x4F 0xB0 BALANCE SMOD GASPRICE DUP16 DUP6 DUP10 0xBB 0xD9 PUSH26 0x14994E5C562C95537552693BE164736F6C634300070400330000 ",
+                        "sourceMap": "66:433:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;357:23;;;;;;;;;;;;;;;;-1:-1:-1;357:23:0;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;357:23:0;:::o"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "35000",
+                            "executionCost": "87",
+                            "totalCost": "35087"
+                        },
+                        "external": {
+                            "betIDs(uint256)": "1909"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "betIDs(uint256)": "bc8b3512"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.7.4+commit.3f05b770\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"betIDs\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/eric/Documents/blockchain_projects/CryptoBets/contracts/Bets.sol\":\"Bets\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/eric/Documents/blockchain_projects/CryptoBets/contracts/Bets.sol\":{\"keccak256\":\"0x15f89c7de4fb58e925b4629340521cdddcadf83caec2167963e2b5a395108d81\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5ce5e6df8f892b5692c29363c40bbd5425eebc227427fe908cb7f5944cf6e504\",\"dweb:/ipfs/QmW7YEGNs98g4mKfWnwDHhTvKDayRUuGcSGhJJQvXCyVWp\"]}},\"version\":1}",
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "sources": {
+        "/home/eric/Documents/blockchain_projects/CryptoBets/contracts/Bets.sol": {
+            "ast": {
+                "absolutePath": "/home/eric/Documents/blockchain_projects/CryptoBets/contracts/Bets.sol",
+                "exportedSymbols": {
+                    "Bets": [
+                        34
+                    ]
+                },
+                "id": 35,
+                "license": "MIT",
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            ">=",
+                            "0.4",
+                            ".22",
+                            "<",
+                            "0.8",
+                            ".0"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "32:32:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "fullyImplemented": true,
+                        "id": 34,
+                        "linearizedBaseContracts": [
+                            34
+                        ],
+                        "name": "Bets",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "canonicalName": "Bets.Bet",
+                                "id": 13,
+                                "members": [
+                                    {
+                                        "constant": false,
+                                        "id": 3,
+                                        "mutability": "mutable",
+                                        "name": "betType",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 13,
+                                        "src": "107:14:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        },
+                                        "typeName": {
+                                            "id": 2,
+                                            "name": "string",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "107:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage_ptr",
+                                                "typeString": "string"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 5,
+                                        "mutability": "mutable",
+                                        "name": "betDesc",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 13,
+                                        "src": "131:14:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        },
+                                        "typeName": {
+                                            "id": 4,
+                                            "name": "string",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "131:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage_ptr",
+                                                "typeString": "string"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 7,
+                                        "mutability": "mutable",
+                                        "name": "winOptions",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 13,
+                                        "src": "155:18:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "typeName": {
+                                            "id": 6,
+                                            "name": "uint256",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "155:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 10,
+                                        "mutability": "mutable",
+                                        "name": "options",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 13,
+                                        "src": "183:17:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                                            "typeString": "uint256[]"
+                                        },
+                                        "typeName": {
+                                            "baseType": {
+                                                "id": 8,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "183:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "id": 9,
+                                            "nodeType": "ArrayTypeName",
+                                            "src": "183:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                                                "typeString": "uint256[]"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 12,
+                                        "mutability": "mutable",
+                                        "name": "img",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 13,
+                                        "src": "210:10:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        },
+                                        "typeName": {
+                                            "id": 11,
+                                            "name": "string",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "210:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage_ptr",
+                                                "typeString": "string"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    }
+                                ],
+                                "name": "Bet",
+                                "nodeType": "StructDefinition",
+                                "scope": 34,
+                                "src": "86:141:0",
+                                "visibility": "public"
+                            },
+                            {
+                                "canonicalName": "Bets.PlaceBets",
+                                "id": 22,
+                                "members": [
+                                    {
+                                        "constant": false,
+                                        "id": 15,
+                                        "mutability": "mutable",
+                                        "name": "betID",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 22,
+                                        "src": "260:13:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "typeName": {
+                                            "id": 14,
+                                            "name": "uint256",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "260:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 17,
+                                        "mutability": "mutable",
+                                        "name": "amount",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 22,
+                                        "src": "283:14:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "typeName": {
+                                            "id": 16,
+                                            "name": "uint256",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "283:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 19,
+                                        "mutability": "mutable",
+                                        "name": "boptions",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 22,
+                                        "src": "307:16:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "typeName": {
+                                            "id": 18,
+                                            "name": "uint256",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "307:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 21,
+                                        "mutability": "mutable",
+                                        "name": "who",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 22,
+                                        "src": "333:11:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        },
+                                        "typeName": {
+                                            "id": 20,
+                                            "name": "address",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "333:7:0",
+                                            "stateMutability": "nonpayable",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    }
+                                ],
+                                "name": "PlaceBets",
+                                "nodeType": "StructDefinition",
+                                "scope": 34,
+                                "src": "233:118:0",
+                                "visibility": "public"
+                            },
+                            {
+                                "constant": false,
+                                "functionSelector": "bc8b3512",
+                                "id": 25,
+                                "mutability": "mutable",
+                                "name": "betIDs",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 34,
+                                "src": "357:23:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+                                    "typeString": "uint256[]"
+                                },
+                                "typeName": {
+                                    "baseType": {
+                                        "id": 23,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "357:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 24,
+                                    "nodeType": "ArrayTypeName",
+                                    "src": "357:9:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                                        "typeString": "uint256[]"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "constant": false,
+                                "id": 29,
+                                "mutability": "mutable",
+                                "name": "BetStruct",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 34,
+                                "src": "387:41:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$13_storage_$",
+                                    "typeString": "mapping(uint256 => struct Bets.Bet)"
+                                },
+                                "typeName": {
+                                    "id": 28,
+                                    "keyType": {
+                                        "id": 26,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "395:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "nodeType": "Mapping",
+                                    "src": "387:23:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$13_storage_$",
+                                        "typeString": "mapping(uint256 => struct Bets.Bet)"
+                                    },
+                                    "valueType": {
+                                        "id": 27,
+                                        "name": "Bet",
+                                        "nodeType": "UserDefinedTypeName",
+                                        "referencedDeclaration": 13,
+                                        "src": "406:3:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Bet_$13_storage_ptr",
+                                            "typeString": "struct Bets.Bet"
+                                        }
+                                    }
+                                },
+                                "visibility": "private"
+                            },
+                            {
+                                "constant": false,
+                                "id": 33,
+                                "mutability": "mutable",
+                                "name": "PlaceBetStruct",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 34,
+                                "src": "434:52:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PlaceBets_$22_storage_$",
+                                    "typeString": "mapping(uint256 => struct Bets.PlaceBets)"
+                                },
+                                "typeName": {
+                                    "id": 32,
+                                    "keyType": {
+                                        "id": 30,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "442:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "nodeType": "Mapping",
+                                    "src": "434:29:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PlaceBets_$22_storage_$",
+                                        "typeString": "mapping(uint256 => struct Bets.PlaceBets)"
+                                    },
+                                    "valueType": {
+                                        "id": 31,
+                                        "name": "PlaceBets",
+                                        "nodeType": "UserDefinedTypeName",
+                                        "referencedDeclaration": 22,
+                                        "src": "453:9:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_PlaceBets_$22_storage_ptr",
+                                            "typeString": "struct Bets.PlaceBets"
+                                        }
+                                    }
+                                },
+                                "visibility": "private"
+                            }
+                        ],
+                        "scope": 35,
+                        "src": "66:433:0"
+                    }
+                ],
+                "src": "32:468:0"
+            },
+            "id": 0
+        }
+    }
+}
